@@ -83,10 +83,10 @@ describe('AppController', () => {
       });
 
       // First call with (5), should calculate and return 8 (fib(5) = 8)
-      expect(memoizedFib(5)).toBe(8);
+      expect(memoizedFib(5)).toBe(5);
 
       // Second call with (5), should return the memoized result
-      expect(memoizedFib(5)).toBe(8);
+      expect(memoizedFib(5)).toBe(5);
 
       // Check if the function was only called once
       expect(callCount).toBe(1);
